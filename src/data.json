@@ -1,0 +1,93 @@
+[
+  {
+    "id": "1", 
+    "title": "Cabin near a lake",
+    "location": "Seatle, WA", 
+    "bedroom": "2", 
+    "bathroom": "2", 
+    "squarefoot": "720",
+    "price": "90000",
+    "coordinates": ["-74.006", "40.7125"],
+    "album": [
+      "src/images/15.jpg",
+      "src/images/16.jpg",
+      "src/images/17.jpg",
+      "src/images/14.jpg",
+      "src/images/18.jpg"
+    ],
+    "description": "This cabin is located in Seattle, WA. It has 2 bedrooms, 2 bathroom",
+    "isBookmarked": "false"
+  },
+  {
+    "id": "2", 
+    "title": "Wooden tiny mobile home", 
+    "location": "Denver, CO", 
+    "bedroom": "2",
+    "bathroom": "1", 
+    "squarefoot": "500",
+    "price": "229000",
+    "coordinates": ["-74.008", "40.800"],
+    "album": [
+      "src/images/20.jpg",
+      "src/images/19.jpg",
+      "src/images/21.jpg",
+      "src/images/22.jpg"
+    ],
+    "description": "This home is located in Denver, CO. It has 2 bedrooms, 1 bathroom",
+    "isBookmarked": "false"
+  },
+  {
+    "id": "3", 
+    "title": "Shipping container home", 
+    "location": "Atlanta, GA", 
+    "bedroom": "2", 
+    "bathroom": "1",
+    "squarefoot": "600", 
+    "price": "120000",
+    "coordinates": ["-74.005", "41"],
+    "album": [
+      "src/images/6.jpeg",
+      "src/images/7.jpeg",
+      "src/images/8.jpeg",
+      "src/images/9.jpeg"
+    ],
+    "description": "This home is located in Atlanta, GA. It has 2 bedrooms, 1 bathroom",
+    "isBookmarked": "false"
+  },
+  {
+    "id": "4", 
+    "title": "(20% Discount!) On-wheel box home",
+    "location": "Omaha, NE",
+    "bedroom": "1",
+    "bathroom": "1",
+    "squarefoot": "600",
+    "price": "70000",
+    "coordinates": ["-74.009", "40.7200"],
+    "album": [
+      "src/images/23.jpeg",
+      "src/images/24.jpeg",
+      "src/images/25.jpeg",
+      "src/images/26.jpeg"
+    ],
+    "description": "This home is located in Omaha, NE. It has 1 bedroom, 1 bathroom",
+    "isBookmarked": "false"
+  },
+  {
+    "id": "4", 
+    "title": "(20% Discount!) On-wheel box home",
+    "location": "Omaha, NE",
+    "bedroom": "1",
+    "bathroom": "1",
+    "squarefoot": "600",
+    "price": "30000",
+    "coordinates": ["-74.010", "40.7220"],
+    "album": [
+      "src/images/23.jpeg",
+      "src/images/24.jpeg",
+      "src/images/25.jpeg",
+      "src/images/26.jpeg"
+    ],
+    "description": "This home is located in Omaha, NE. It has 1 bedroom, 1 bathroom",
+    "isBookmarked": "false"
+  }
+]

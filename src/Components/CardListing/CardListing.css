@@ -1,0 +1,141 @@
+:root {
+  --thumbnailh: 255px;
+}
+.CardListing {
+  display: flex;
+  border-radius:10px;
+  /* box-shadow:0px 0px 10px 0px rgba(0,0,0,0.25); */
+  background-color:#ffffff;
+  font-family:'Nunito', san-serif;
+  padding:15px;
+  flex-direction:column;
+  width:285px;
+  position:relative;
+}
+.CardListing-thumbnail {
+  overflow: hidden;
+  width:100%;
+  height:var(--thumbnailh);
+  border-radius:15px;
+  position:relative;
+  text-shadow:0px 0px 3px #000000;
+}
+.CardListing-info {
+  margin: 11px 11px 0px 11px;
+  text-align:left;
+}
+.CardListing-carousel-container {
+  height:100%;
+  display: inline-flex;
+}
+.CardListing-img-overlay {
+  background-color:rgba(0,0,0,0.2);
+  height:100%;
+  width:100%;
+  position:absolute;
+  top:0px;
+}
+.CardListing-save-btn {
+  color:#ffffff;
+  position:absolute;
+  top:11px;
+  right:11px;
+  font-size:26px;
+  cursor:pointer;
+}
+.CardListing-price {
+  position:absolute;
+  bottom:16px;
+  left:11px;
+  color:#ffffff;
+  font-size:20px;
+  font-weight:800;
+}
+.CardListing-carousel-dots-container {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:absolute;
+  bottom:8px;
+  left:50%;
+  transform: translateX(-50%);
+}
+/* .carousel-dot-current */
+.carousel-dot {
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background-color:#ffffff;
+  opacity:0.4;
+  margin:0px 5px;
+  cursor:pointer;
+  box-shadow:0px 0px 6px 0px rgb(0,0,0);
+}
+.carousel-dot:first-child {
+  opacity:1;
+}
+.carousel-dot.active {
+  opacity:1;
+}
+.carousel-dot.non-active {
+  opacity:0.4;
+}
+.CardListing-arrows-container {
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+  width:100%;
+  height:auto;
+  bckground:red;
+  color:white;
+  font-size:22px;
+  display: flex;
+  justify-content: space-between;
+  padding:0px 12px;
+  transition:0.1s;
+}
+.left-arrow, .right-arrow {
+  cursor:pointer;
+}
+.CardListing-save-btn i {
+  opacity:0.5;
+}
+.CardListing-save-btn i:hover {
+  transition:0.1s;
+  opacity:1;
+}
+.CardListing-title {
+  font-size:18px;
+  font-weight:800;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.CardListing-features {
+  font-size:16px;
+  font-weight:bold;
+}
+.CardListing-location {
+  font-size:12px;
+  color:#545454;
+  font-weight:800;
+}
+.CardListing-title, .CardListing-features, .CardListing-location {
+  margin-top:4px;
+}
+.CardListing-thumbnail img {
+  width: var(--thumbnailh);
+  height: var(--thumbnailh);
+  object-fit: cover;
+}
+/*PopupListing class is assigned only at the Mapbox component to assign styling for the map only*/
+/* Just mentioned .PopupListing followed by the class you want to modify specially for the mapbox */
+.PopupListing {
+  height:280px;
+  box-shadow:0px 0px 10px 0px rgba(0,0,0,0.25);
+}
+.mapboxgl-popup-close-button {
+  display:none;
+}

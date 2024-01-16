@@ -1,0 +1,74 @@
+#map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the width 100% of the parent container */
+  height: 100%; 
+}
+a {
+  text-decoration: none;
+  border: none;
+  color: black;
+  outline: none;
+}
+.marker {
+  display: block;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+}
+/* Optionally, you can remove box-shadow as well */
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip,
+.mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
+  box-shadow: none;
+  border: none !important;
+  padding:8px;
+}
+
+.custom-marker {
+  display:inline-block;
+  background-color: #0E1D22;
+  color: white;
+  /* border: 2px solid #e64500; */
+  border-radius: 100px;
+  padding: 1px 8px;
+  text-align: center;
+  font-size: 12px;
+  cursor:pointer;
+}
+.custom-marker:active {
+  background-color:#283C43;
+}
+.custom-marker::after {
+  content:'';
+  border-top: 5px solid #0E1D22;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  position:absolute;
+  top:100%;
+  left:40%;
+  width: 0;
+  height: 0;  
+}
+.mapboxgl-popup-close-button {
+  color:white;
+  font-size:16px;
+}
+.mapboxgl-popup {
+  border: none;
+  /* width:360px; */
+}
+.mapboxgl-popup-content {
+  padding: 0px !important; /* Remove padding */
+  border-radius:5px;
+  font-family:'Nunito', sans-serif;
+  background-color:rgba(0,0,0,0) !important;
+  box-shadow:0px 0px 0px 0px rgba(0,0,0,0) !important;
+}
+.mapboxgl-popup-content img {
+  padding: 0px !important; /* Remove padding */
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+}
